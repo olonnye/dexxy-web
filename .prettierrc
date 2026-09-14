@@ -1,3 +1,21 @@
 {
-  "singleQuote": true
+    "semi": true,
+    "bracketSpacing": true,
+    "endOfLine": "lf",
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "all",
+    "printWidth": 100,
+    "useTabs": false,
+    "arrowParens": "always",
+    "jsxSingleQuote": false,
+    "bracketSameLine": false,
+    "overrides": [
+        {
+            "files": ["*.yaml", "*.yml"],
+            "options": {
+                "singleQuote": false
+            }
+        }
+    ]
 }

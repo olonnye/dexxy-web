@@ -1,6 +1,14 @@
 # Add files here to ignore them from prettier formatting
 /dist
 /coverage
+/node_modules
+/tmp
+/coverage
 /.nx/cache
 /.nx/workspace-data
 .nx/self-healing
+
+# Exclude generated files
+apps/migrations/src
+**/generated.ts
+**/graphql.ts

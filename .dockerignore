@@ -1,0 +1,13 @@
+node_modules
+.yarn/cache
+dist
+.nx
+.git
+.gitignore
+Dockerfile*
+docker-compose*
+.env
+.env.*
+coverage
+*.log
+.next

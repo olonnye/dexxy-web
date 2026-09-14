@@ -1,0 +1,9 @@
+{
+    "name": "dx-web",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "tags": ["app:react"],
+    "sourceRoot": "apps/dx-web/src",
+    "projectType": "application",
+    "// targets": "to see all targets run: nx show project dx-web --web",
+    "targets": {}
+}

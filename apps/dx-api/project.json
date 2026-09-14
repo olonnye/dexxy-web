@@ -1,0 +1,9 @@
+{
+    "name": "dx-api",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "apps/dx-api/src",
+    "projectType": "application",
+    "tags": ["app:fastify"],
+    "// targets": "to see all targets run: nx show project dx-api --web",
+    "targets": {}
+}
