@@ -18,9 +18,7 @@
         {
             "plugin": "@nx/js/typescript",
             "options": {
-                "typecheck": {
-                    "targetName": "typecheck"
-                },
+                "typecheck": { "targetName": "typecheck" },
                 "build": {
                     "targetName": "build",
                     "configName": "tsconfig.lib.json",
@@ -41,12 +39,7 @@
                 "typecheckTargetName": "typecheck"
             }
         },
-        {
-            "plugin": "@nx/eslint/plugin",
-            "options": {
-                "targetName": "lint"
-            }
-        },
+        { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
         {
             "plugin": "@nx/vite/plugin",
             "options": {
@@ -62,31 +55,17 @@
         },
         {
             "plugin": "@nx/playwright/plugin",
-            "options": {
-                "targetName": "e2e",
-                "ciTargetName": "e2e-ci"
-            }
+            "options": { "targetName": "e2e", "ciTargetName": "e2e-ci" }
         },
         {
             "plugin": "@nx/js/typescript",
             "include": ["packages/shared/models/*"],
-            "options": {
-                "typecheck": {
-                    "targetName": "typecheck"
-                }
-            }
+            "options": { "typecheck": { "targetName": "typecheck" } }
         },
-        {
-            "plugin": "@nx/vitest",
-            "options": {
-                "testTargetName": "test"
-            }
-        }
+        { "plugin": "@nx/vitest", "options": { "testTargetName": "test" } }
     ],
     "targetDefaults": {
-        "test": {
-            "dependsOn": ["^build"]
-        },
+        "test": { "dependsOn": ["^build"] },
         "@nx/esbuild:esbuild": {
             "cache": true,
             "dependsOn": ["^build"],
@@ -100,22 +79,11 @@
     },
     "generators": {
         "@nx/react": {
-            "application": {
-                "babel": true,
-                "style": "css",
-                "linter": "eslint",
-                "bundler": "vite"
-            },
-            "component": {
-                "style": "css"
-            },
-            "library": {
-                "style": "css",
-                "linter": "eslint",
-                "unitTestRunner": "vitest"
-            }
+            "application": { "babel": true, "style": "css", "linter": "eslint", "bundler": "vite" },
+            "component": { "style": "css" },
+            "library": { "style": "css", "linter": "eslint", "unitTestRunner": "vitest" }
         }
     },
-    "nxCloudId": "6aa6a19e7fa3052e222f6249",
+    "nxCloudId": "6aabb1bbcc81cb03d2847e5a",
     "analytics": true
 }
