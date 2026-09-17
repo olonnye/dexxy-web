@@ -1,0 +1,9 @@
+{
+    "name": "feature-swaps-dashboard",
+    "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/dx-web/swaps/feature-swaps-dashboard/src",
+    "projectType": "library",
+    "tags": ["scope:dx-web", "dependency:react", "type:feature"],
+    "// targets": "to see all targets run: nx show project feature-swaps-dashboard --web",
+    "targets": {}
+}

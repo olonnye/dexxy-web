@@ -14,6 +14,9 @@
         },
         {
             "path": "./apps/dx-migrations"
+        },
+        {
+            "path": "./libs/dx-web/swaps/feature-swaps-dashboard"
         }
     ]
 }

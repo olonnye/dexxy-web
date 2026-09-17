@@ -2,8 +2,11 @@
     "name": "dx-web",
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "tags": ["app:react"],
-    "sourceRoot": "apps/dx-web/src",
+    "sourceRoot": "apps/dx-web",
     "projectType": "application",
-    "// targets": "to see all targets run: nx show project dx-web --web",
-    "targets": {}
+    "targets": {
+        "lint": {
+            "executor": "@nx/eslint:lint"
+        }
+    }
 }

@@ -1,0 +1,40 @@
+{
+    "name": "@stencil/ui-swaps-component",
+    "version": "0.0.1",
+    "main": "./dist/index.cjs.js",
+    "module": "./dist/index.js",
+    "es2015": "./dist/esm/index.mjs",
+    "es2017": "./dist/esm/index.mjs",
+    "types": "./dist/types/index.d.ts",
+    "collection": "./dist/collection/collection-manifest.json",
+    "collection:main": "./dist/collection/index.js",
+    "unpkg": "./dist/ui-swaps-component/ui-swaps-component.js",
+    "files": [
+        "dist/",
+        "loader/"
+    ],
+    "nx": {
+        "name": "ui-swaps-component",
+        "tags": [
+            "scope:dx-web",
+            "dependency:stencil",
+            "type:ui"
+        ],
+        "generators": {
+            "@nxext/stencil:component": {
+                "style": "scss"
+            }
+        },
+        "targets": {
+            "lint": {
+                "executor": "@nx/eslint:eslint",
+                "outputs": [
+                    "{options.outputFile}"
+                ],
+                "options": {
+                    "lintFilePatterns": "libs/dx-web/swaps/ui-swaps-component/**/*.{ts,tsx}"
+                }
+            }
+        }
+    }
+}

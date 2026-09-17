@@ -1,6 +1,7 @@
 /// <reference types='vitest' />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import nodeExternals from 'rollup-plugin-node-externals';
 
 export default defineConfig(() => ({
     root: import.meta.dirname,
@@ -13,7 +14,11 @@ export default defineConfig(() => ({
         port: 3306,
         host: 'localhost',
     },
-    plugins: [react()],
+    plugins: [
+        react(),
+        // Will make sure dependencies from package.json are treated as external and not bundled
+        { ...nodeExternals(), enforce: 'pre' },
+    ],
     // Uncomment this if you are using workers.
     // worker: {
     //  plugins: [],
